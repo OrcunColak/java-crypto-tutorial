@@ -26,16 +26,16 @@ class RSACryptoTest {
         // Original message
         String originalMessage = "Hello, this is a secret message!";
 
-        log.info("Original message: " + originalMessage);
+        log.info("Original message: {}", originalMessage);
         // Encrypt using the public key
         String encryptedMessage = encrypt(originalMessage, publicKey);
 
-        log.info("Encrypted message: " + encryptedMessage);
+        log.info("Encrypted message: {}", encryptedMessage);
 
         // Decrypt using the private key
         String decryptedMessage = decrypt(encryptedMessage, privateKey);
 
-        log.info("Decrypted message: " + decryptedMessage);
+        log.info("Decrypted message: {}", decryptedMessage);
     }
 
 
